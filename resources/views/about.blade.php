@@ -1,7 +1,3 @@
-@extends('layouts.app')
-
-@section('title', $title)
-
-@section('content')
-  <p style="color: white">This is about page.</p>
-@endsection
+<x-layout :title="$title">
+      <p style="color: white">About us page.</p>
+</x-layout>

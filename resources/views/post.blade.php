@@ -19,9 +19,9 @@
                   <div class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
                       <img class="mr-4 w-16 h-16 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg" alt="Jese Leos">
                       <div>
-                          <a href="/authors/{{ $post->author->username }}" rel="author" class="text-xl font-bold text-gray-900 dark:text-white">{{ $post->author->name }}</a>
+                          <a href="/posts?author={{ $post->author->username }}" rel="author" class="text-xl font-bold text-gray-900 dark:text-white">{{ $post->author->name }}</a>
                           <div class="flex items-center gap-2 my-1">
-                            <a href="/categories/{{ $post->category->slug }}">
+                            <a href="/posts?category={{ $post->category->slug }}">
                               <span class="{{ $post->category->color }} inline-block text-xs font-semibold px-2.5 py-0.5 rounded hover:opacity-80 transition">
                                 {{ $post->category->name }}
                               </span>

@@ -33,8 +33,9 @@
         </div>
     </form>
 
+    {{ $posts->links() }}
 
-      <div class="grid gap-8 lg:grid-cols-3 md:grid-cols-2">
+      <div class="mt-5 grid gap-8 lg:grid-cols-3 md:grid-cols-2">
         @foreach ($posts as $post)
           <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
               <div class="flex justify-between items-center mb-5 text-gray-500">
